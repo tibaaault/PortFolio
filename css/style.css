@@ -1,0 +1,25 @@
+.sousHeader {
+  display: flex;
+  position: relative;
+  width: 100%;
+  background-color: #fff;
+  margin-bottom: 250px;
+  margin-top: -20px;
+}
+
+.sousHeaderGauche {
+  background-repeat: no-repeat;
+  text-align: center;
+  position: relative;
+  width: 50%;
+  color: black;
+  padding: 10px 10px 10px 10px;
+}
+
+.sousHeaderDroit {
+  text-align: center;
+  position: relative;
+  width: 50%;
+  color: black;
+  margin: auto;
+}

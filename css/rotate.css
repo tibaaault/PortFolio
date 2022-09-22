@@ -1,0 +1,1175 @@
+.all {
+  animation: roundcircle 10s infinite linear;
+  height: 360px;
+  width: 360px;
+  border-radius: 100%;
+  margin: 75px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.all:hover *,
+.all:hover {
+  animation-play-state: paused;
+}
+
+.rotation_engrenage {
+  position: absolute;
+  width: 140px;
+  border-radius: 25px;
+  height: auto;
+  display: block;
+  margin: auto;
+  animation: roundcircleReverse 10s infinite linear;
+}
+.rotation_engrenage2 {
+  position: absolute;
+  width: 200px;
+  height: auto;
+  display: block;
+  margin: auto;
+  animation: roundcircleReverse 10s infinite linear;
+}
+
+.rotation_engrenage_exterieur {
+  position: absolute;
+  width: auto;
+  height: 700px;
+}
+
+.cadre {
+  position: absolute;
+  display: block;
+}
+.cadre div {
+  border-radius: 100%;
+}
+
+.circle {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-style: dotted;
+  border-width: 3px;
+  border-radius: 100%;
+  border-color: #fff;
+}
+
+.rotate {
+  position: absolute;
+  width: auto;
+  display: block;
+  margin: auto;
+  animation: roundcircleReverse 10s infinite linear;
+}
+
+.rotate div {
+  text-align: center;
+  border-radius: 100%;
+  border-color: #0fe5fe;
+  border-style: dotted;
+  border-width: 2px;
+  height: 102px;
+  width: 102px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  z-index: 10;
+}
+
+#a {
+  transform: translate(0px, -230px);
+}
+#b {
+  transform: rotate(60deg) translate(0px, -230px);
+}
+#c {
+  transform: rotate(120deg) translate(0px, -230px);
+}
+
+#d {
+  transform: rotate(180deg) translate(0px, -230px);
+}
+
+#e {
+  transform: rotate(240deg) translate(0px, -230px);
+}
+#f {
+  transform: rotate(300deg) translate(0px, -230px);
+}
+
+@keyframes roundcircle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes roundcirclediv {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes roundcircleReverse {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes roundcircleTexte {
+  0% {
+    transform: translate(0deg);
+  }
+  25% {
+    transform: translate(90deg);
+  }
+  50% {
+    transform: translate(180deg);
+  }
+  75% {
+    transform: translate(270deg);
+  }
+  100% {
+    transform: translate(360deg);
+  }
+}
+
+#aa {
+  background-image: url(https://www.pdv-soft.fr/wp-content/uploads/2022/05/achat-direct.png);
+  background-color: #1e2f50;
+  background-repeat: no-repeat;
+  border-radius: 75px;
+  overflow: hidden;
+  background-position: center;
+  background-size: contain;
+  transform: rotate(0deg);
+}
+#bb {
+  background-size: 80%;
+  background-image: url(https://www.pdv-soft.fr/wp-content/uploads/2022/05/depot-test.png);
+  background-color: #1e2f50;
+  display: inline-block;
+  border-radius: 75px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: rotate(-40deg);
+}
+#cc {
+  background-size: 80%;
+  background-image: url(https://www.pdv-soft.fr/wp-content/uploads/2022/05/metaux-precieux.png);
+  background-color: #1e2f50;
+  display: inline-block;
+  border-radius: 75px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: rotate(-120deg);
+}
+#dd {
+  background-size: 80%;
+  background-image: url(https://www.pdv-soft.fr/wp-content/uploads/2022/05/acvhzt-option-retour.png);
+  background-color: #1e2f50;
+  display: inline-block;
+  border-radius: 75px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: rotate(-180deg);
+}
+#ee {
+  background-size: 80%;
+  background-image: url(https://www.pdv-soft.fr/wp-content/uploads/2022/05/livre-de-police.png);
+  background-color: #1e2f50;
+  display: inline-block;
+  border-radius: 75px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: rotate(120deg);
+}
+#ff {
+  background-size: 80%;
+  background-image: url(https://www.pdv-soft.fr/wp-content/uploads/2022/05/export-compt.png);
+  background-color: #1e2f50;
+  display: inline-block;
+  border-radius: 75px;
+  overflow: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: rotate(60deg);
+}
+
+#aa:hover,
+#bb:hover,
+#cc:hover,
+#dd:hover,
+#ee:hover,
+#ff:hover {
+  background-color: #4f7291;
+}
+
+.tooltip {
+  border-radius: 70px;
+  position: absolute;
+  margin: 15px;
+  text-align: center;
+  opacity: 1;
+}
+
+.tooltip::after {
+  background-color: #4f7291;
+  color: white;
+  display: none;
+  margin: 1px 1px 1px 1px;
+  position: absolute;
+  text-align: center;
+  z-index: 999;
+  width: 120px;
+  height: 100px;
+  border-style: dotted;
+  border-color: #0fe5fe;
+  border-width: 2px;
+}
+
+.tooltip:hover::after {
+  display: block;
+}
+.tooltip::after {
+  display: block;
+}
+
+.topAchatDirect::after {
+  font-family: serif;
+  font-size: 25px;
+  content: "À mon sujet";
+  top: 0;
+  left: 0;
+  transform: translate(1%, calc(-101% - 39px));
+}
+
+.topAchatDirect:hover:after {
+  background-color: #1e2f50;
+  font-family: serif;
+  font-size: 65px;
+  content: "\002139";
+  line-height: 70px;
+  text-align: center;
+  top: 0;
+  left: 0;
+  transform: translate(1%, calc(-101% - 39px));
+  padding: 1px 1px 1px 1px;
+}
+
+.topDepot::after {
+  font-family: serif;
+  font-size: 25px;
+  content: "Stage";
+  left: 0;
+  transform: translate(1%, calc(-101% - 39px));
+}
+.topDepot:hover:after {
+  font-size: 65px;
+  content: "\002139";
+  line-height: 70px;
+  text-align: center;
+  background-color: #1e2f50;
+  left: 0;
+  transform: translate(1%, calc(-101% - 39px));
+}
+
+.topMetaux::after {
+  font-family: serif;
+  font-size: 25px;
+  content: "Réalisation";
+  left: 0;
+  transform: translate(1%, calc(-101% - 39px));
+}
+.topMetaux:hover:after {
+  font-size: 65px;
+  content: "\002139";
+  line-height: 70px;
+  text-align: center;
+  background-color: #1e2f50;
+  left: 0;
+  transform: translate(1%, calc(-101% - 39px));
+}
+.topAchatOption::after {
+  font-family: serif;
+  font-size: 23px;
+  content: "Compétence";
+  left: 0;
+  transform: translate(1%, calc(-101% - 39px));
+}
+.topAchatOption:hover:after {
+  font-size: 65px;
+  content: "\002139";
+  line-height: 70px;
+  text-align: center;
+  font-family: serif;
+  background-color: #1e2f50;
+  left: 0;
+  transform: translate(1%, calc(-101% - 39px));
+}
+.topLivre::after {
+  font-family: serif;
+  font-size: 25px;
+  content: "Screen";
+  left: 0;
+  transform: translate(1%, calc(-101% - 39px));
+
+}
+.topLivre:hover:after {
+  font-size: 65px;
+  content: "\002139";
+  line-height: 70px;
+  text-align: center;
+  background-color: #1e2f50;
+  left: 0;
+  transform: translate(1%, calc(-101% - 39px));
+}
+.topExportation::after {
+  font-family: serif;
+  font-size: 23px;
+  content: "Veille info";
+  left: 0;
+  transform: translate(1%, calc(-101% - 39px));
+}
+.topExportation:hover:after {
+  font-size: 65px;
+  content: "\002139";
+  line-height: 70px;
+  text-align: center;
+  background-color: #1e2f50;
+  left: 0;
+  transform: translate(1%, calc(-101% - 39px));
+}
+
+@media (max-width: 991px) {
+  .all {
+    animation: roundcircle 10s infinite linear;
+    height: 760px;
+    width: 760px;
+    border-radius: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .all:hover *,
+  .all:hover {
+    animation-play-state: paused;
+  }
+
+  .rotation_engrenage {
+    position: absolute;
+    width: 170px;
+    height: auto;
+    display: block;
+    margin: auto;
+    animation: roundcircleReverse 10s infinite linear;
+  }
+  .rotation_engrenage2 {
+    position: absolute;
+    width: 175px;
+    height: auto;
+    display: block;
+    margin: auto;
+    animation: roundcircleReverse 10s infinite linear;
+  }
+
+  .rotation_engrenage_exterieur {
+    position: absolute;
+    width: 590px;
+    height: auto;
+  }
+
+  .cadre {
+    position: absolute;
+    display: block;
+  }
+  .cadre div {
+    border-radius: 100%;
+  }
+
+  .circle {
+    position: absolute;
+    width: 315px;
+    height: 315px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: dotted;
+    border-width: 3px;
+    border-radius: 100%;
+    border-color: #0fe5fe;
+  }
+
+  .rotate {
+    position: absolute;
+    width: auto;
+    display: block;
+    margin: auto;
+    animation: roundcircleReverse 10s infinite linear;
+  }
+
+  .rotate div {
+    text-align: center;
+    border-radius: 100%;
+    border-color: #0fe5fe;
+    border-style: dotted;
+    border-width: 2px;
+    height: 80px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    z-index: 10;
+  }
+
+  #a {
+    transform: translate(0px, -200px);
+  }
+  #b {
+    transform: rotate(45deg) translate(0px, -200px);
+  }
+  #c {
+    transform: rotate(90deg) translate(0px, -200px);
+  }
+
+  #d {
+    transform: rotate(135deg) translate(0px, -200px);
+  }
+
+  #e {
+    transform: rotate(180deg) translate(0px, -200px);
+  }
+  #f {
+    transform: rotate(225deg) translate(0px, -200px);
+  }
+
+  #g {
+    transform: rotate(270deg) translate(0px, -200px);
+  }
+
+  #h {
+    transform: rotate(315deg) translate(0px, -200px);
+  }
+
+  #aa {
+    background-image: url(https://www.pdv-soft.fr/wp-content/uploads/2022/05/achat-direct.png);
+    background-color: #1e2f50;
+    background-repeat: no-repeat;
+    border-radius: 75px;
+    overflow: hidden;
+    background-position: center;
+    background-size: contain;
+    transform: rotate(0deg);
+  }
+  #bb {
+    background-size: 80%;
+    background-image: url(https://www.pdv-soft.fr/wp-content/uploads/2022/05/depot-test.png);
+    background-color: #1e2f50;
+    display: inline-block;
+    border-radius: 75px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(-60deg);
+  }
+  #cc {
+    background-size: 80%;
+    background-image: url(https://www.pdv-soft.fr/wp-content/uploads/2022/05/metaux-precieux.png);
+    background-color: #1e2f50;
+    display: inline-block;
+    border-radius: 75px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(-90deg);
+  }
+  #dd {
+    background-size: 80%;
+    background-image: url(https://www.pdv-soft.fr/wp-content/uploads/2022/05/acvhzt-option-retour.png);
+    background-color: #1e2f50;
+    display: inline-block;
+    border-radius: 75px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(-140deg);
+  }
+  #ee {
+    background-size: 80%;
+    background-image: url(https://www.pdv-soft.fr/wp-content/uploads/2022/05/livre-de-police.png);
+    background-color: #1e2f50;
+    display: inline-block;
+    border-radius: 75px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(175deg);
+  }
+  #ff {
+    background-size: 80%;
+    background-image: url(https://www.pdv-soft.fr/wp-content/uploads/2022/05/export-compt.png);
+    background-color: #1e2f50;
+    display: inline-block;
+    border-radius: 75px;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: rotate(130deg);
+  }
+  #gg {
+    background-size: 80%;
+    background-image: url(https://www.pdv-soft.fr/wp-content/uploads/2022/05/gestion-catalogue.png);
+    background-color: #1e2f50;
+    display: inline-block;
+    border-radius: 75px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(85deg);
+  }
+  #hh {
+    background-size: 80%;
+    background-image: url(https://www.pdv-soft.fr/wp-content/uploads/2022/05/SAV.png);
+    background-color: #1e2f50;
+    display: inline-block;
+    border-radius: 75px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(40deg);
+  }
+
+  #aa:hover,
+  #bb:hover,
+  #cc:hover,
+  #dd:hover,
+  #ee:hover,
+  #ff:hover,
+  #gg:hover,
+  #hh:hover {
+    background-color: #4f7291;
+  }
+
+  .tooltip {
+    border-radius: 70px;
+    position: absolute;
+    margin: 15px;
+    text-align: center;
+    opacity: 1;
+  }
+
+  .tooltip::after {
+    background-color: #4f7291;
+    color: white;
+    display: none;
+    margin: 1px 1px 1px 1px;
+    position: absolute;
+    text-align: center;
+    z-index: 999;
+    width: 100px;
+    height: 70px;
+    border-style: dotted;
+    border-color: #0fe5fe;
+    border-width: 2px;
+  }
+
+  .tooltip:hover::after {
+    display: block;
+  }
+  .tooltip::after {
+    display: block;
+  }
+
+  .topAchatDirect::after {
+    font-family: serif;
+    font-size: 20px;
+    content: "Achat direct";
+    left: 0;
+    transform: translate(1%, calc(-101% - 39px));
+    rotate: -33deg;
+  }
+
+  .topAchatDirect:hover:after {
+    background-color: #1e2f50;
+    font-family: serif;
+    font-size: 65px;
+    content: "\002139";
+    line-height: 70px;
+    text-align: center;
+    top: 0;
+    left: 0;
+    transform: translate(1%, calc(-101% - 39px));
+    rotate: -33deg;
+    padding: 1px 1px 1px 1px;
+  }
+
+  .topDepot::after {
+    font-family: serif;
+    font-size: 20px;
+    content: "Depot Test";
+    top: 0;
+    left: 50%;
+    transform: translate(-15%, calc(-140% + 10px));
+  }
+  .topDepot:hover:after {
+    font-size: 65px;
+    content: "\002139";
+    line-height: 70px;
+    text-align: center;
+    background-color: #1e2f50;
+    top: 0;
+    left: 0;
+    transform: translate(1%, calc(-101% - 39px));
+    rotate: -33deg;
+  }
+
+  .topMetaux::after {
+    font-family: serif;
+    font-size: 20px;
+    content: "Métaux Précieux";
+    top: 0;
+    left: 0;
+    transform: translate(1%, calc(-101% - 39px));
+    rotate: -33deg;
+  }
+  .topMetaux:hover:after {
+    font-size: 65px;
+    content: "\002139";
+    line-height: 70px;
+    text-align: center;
+    background-color: #1e2f50;
+    top: 0;
+    left: 0;
+    transform: translate(1%, calc(-101% - 39px));
+    rotate: -33deg;
+  }
+  .topAchatOption::after {
+    font-family: serif;
+    font-size: 17px;
+    content: "Achat Option Reprise";
+    top: 0;
+    left: 0;
+    transform: translate(1%, calc(-101% - 39px));
+    rotate: -33deg;
+  }
+  .topAchatOption:hover:after {
+    font-size: 65px;
+    content: "\002139";
+    line-height: 70px;
+    text-align: center;
+    font-family: serif;
+    background-color: #1e2f50;
+    top: 0;
+    left: 0;
+    transform: translate(1%, calc(-101% - 39px));
+    rotate: -33deg;
+  }
+  .topLivre::after {
+    font-family: serif;
+    font-size: 20px;
+    content: "Livre Police";
+    top: 0;
+    left: 0;
+    transform: translate(1%, calc(-101% - 39px));
+    rotate: -33deg;
+  }
+  .topLivre:hover:after {
+    font-size: 65px;
+    content: "\002139";
+    line-height: 70px;
+    text-align: center;
+    background-color: #1e2f50;
+    top: 0;
+    left: 0;
+    transform: translate(1%, calc(-101% - 39px));
+    rotate: -33deg;
+  }
+  .topExportation::after {
+    font-family: serif;
+    font-size: 20px;
+    content: "Exportation Comptable";
+    top: 0;
+    left: 0;
+    transform: translate(1%, calc(-101% - 39px));
+    rotate: -33deg;
+  }
+  .topExportation:hover:after {
+    font-size: 65px;
+    content: "\002139";
+    line-height: 70px;
+    text-align: center;
+    background-color: #1e2f50;
+    top: 0;
+    left: 0;
+    transform: translate(1%, calc(-101% - 39px));
+    rotate: -33deg;
+  }
+  .topGestion::after {
+    font-family: serif;
+    font-size: 20px;
+    content: "Gestion Catalogue";
+    top: 0;
+    left: 0;
+    transform: translate(1%, calc(-101% - 39px));
+    rotate: -33deg;
+  }
+
+  .topGestion:hover:after {
+    font-size: 65px;
+    content: "\002139";
+    line-height: 70px;
+    text-align: center;
+    background-color: #1e2f50;
+    top: 0;
+    left: 50%;
+    transform: translate(-15%, calc(-140% + 10px));
+  }
+  .topSAV::after {
+    font-family: serif;
+    font-size: 20px;
+    content: "S.A.V";
+    top: 0;
+    left: 50%;
+    transform: translate(-15%, calc(-140% + 10px));
+  }
+  .topSAV:hover:after {
+    font-size: 65px;
+    content: "\002139";
+    line-height: 70px;
+    text-align: center;
+    background-color: #1e2f50;
+    top: 0;
+    left: 0;
+    transform: translate(1%, calc(-101% - 39px));
+    rotate: -33deg;
+  }
+}
+
+@media (max-width: 575px) {
+  .all {
+    animation: roundcircle 10s infinite linear;
+    height: 700px;
+    width: 700px;
+    border-radius: 100%;
+    margin-top: -180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .all:hover *,
+  .all:hover {
+    animation-play-state: paused;
+  }
+
+  .rotation_engrenage {
+    position: absolute;
+    width: 98px;
+    height: auto;
+    display: block;
+    margin: auto;
+    animation: roundcircleReverse 10s infinite linear;
+  }
+  .rotation_engrenage2 {
+    position: absolute;
+    width: 103px;
+    height: auto;
+    display: block;
+    margin: auto;
+    animation: roundcircleReverse 10s infinite linear;
+  }
+
+  .rotation_engrenage_exterieur {
+    position: absolute;
+    width: 390px;
+    height: auto;
+  }
+
+  .cadre {
+    position: absolute;
+    display: block;
+  }
+  .cadre div {
+    border-radius: 100%;
+  }
+
+  .circle {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: dotted;
+    border-width: 3px;
+    border-radius: 100%;
+    border-color: #0fe5fe;
+  }
+
+  .rotate {
+    position: absolute;
+    width: auto;
+    display: block;
+    margin: auto;
+    animation: roundcircleReverse 10s infinite linear;
+  }
+
+  .rotate div {
+    text-align: center;
+    border-radius: 100%;
+    border-color: #0fe5fe;
+    border-style: dotted;
+    border-width: 2px;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    z-index: 10;
+  }
+
+  #a {
+    transform: translate(0px, -130px);
+  }
+  #b {
+    transform: rotate(45deg) translate(0px, -130px);
+  }
+  #c {
+    transform: rotate(90deg) translate(0px, -130px);
+  }
+
+  #d {
+    transform: rotate(135deg) translate(0px, -130px);
+  }
+
+  #e {
+    transform: rotate(180deg) translate(0px, -130px);
+  }
+  #f {
+    transform: rotate(225deg) translate(0px, -130px);
+  }
+
+  #g {
+    transform: rotate(270deg) translate(0px, -130px);
+  }
+
+  #h {
+    transform: rotate(315deg) translate(0px, -130px);
+  }
+
+  #aa {
+    background-image: url(https://www.pdv-soft.fr/wp-content/uploads/2022/05/achat-direct.png);
+    background-color: #1e2f50;
+    background-repeat: no-repeat;
+    border-radius: 75px;
+    overflow: hidden;
+    background-position: center;
+    background-size: contain;
+    transform: rotate(0deg);
+  }
+  #bb {
+    background-size: 80%;
+    background-image: url(https://www.pdv-soft.fr/wp-content/uploads/2022/05/depot-test.png);
+    background-color: #1e2f50;
+    display: inline-block;
+    border-radius: 75px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(-60deg);
+  }
+  #cc {
+    background-size: 80%;
+    background-image: url(https://www.pdv-soft.fr/wp-content/uploads/2022/05/metaux-precieux.png);
+    background-color: #1e2f50;
+    display: inline-block;
+    border-radius: 75px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(-90deg);
+  }
+  #dd {
+    background-size: 80%;
+    background-image: url(https://www.pdv-soft.fr/wp-content/uploads/2022/05/acvhzt-option-retour.png);
+    background-color: #1e2f50;
+    display: inline-block;
+    border-radius: 75px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(-140deg);
+  }
+  #ee {
+    background-size: 80%;
+    background-image: url(https://www.pdv-soft.fr/wp-content/uploads/2022/05/livre-de-police.png);
+    background-color: #1e2f50;
+    display: inline-block;
+    border-radius: 75px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(175deg);
+  }
+  #ff {
+    background-size: 80%;
+    background-image: url(https://www.pdv-soft.fr/wp-content/uploads/2022/05/export-compt.png);
+    background-color: #1e2f50;
+    display: inline-block;
+    border-radius: 75px;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: rotate(130deg);
+  }
+  #gg {
+    background-size: 80%;
+    background-image: url(https://www.pdv-soft.fr/wp-content/uploads/2022/05/gestion-catalogue.png);
+    background-color: #1e2f50;
+    display: inline-block;
+    border-radius: 75px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(85deg);
+  }
+  #hh {
+    background-size: 80%;
+    background-image: url(https://www.pdv-soft.fr/wp-content/uploads/2022/05/SAV.png);
+    background-color: #1e2f50;
+    display: inline-block;
+    border-radius: 75px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(40deg);
+  }
+
+  #aa:hover,
+  #bb:hover,
+  #cc:hover,
+  #dd:hover,
+  #ee:hover,
+  #ff:hover,
+  #gg:hover,
+  #hh:hover {
+    background-color: #4f7291;
+  }
+
+  .tooltip {
+    border-radius: 70px;
+    position: absolute;
+    margin: 15px;
+    text-align: center;
+    opacity: 1;
+  }
+
+  .tooltip::after {
+    background-color: #4f7291;
+    color: white;
+    display: none;
+    margin: 1px 1px 1px 1px;
+    position: absolute;
+    text-align: center;
+    z-index: 999;
+    width: 70px;
+    height: 50px;
+    border-style: dotted;
+    border-color: #0fe5fe;
+    border-width: 2px;
+  }
+
+  .tooltip:hover::after {
+    display: block;
+  }
+  .tooltip::after {
+    display: block;
+  }
+
+  .topAchatDirect::after {
+    font-family: serif;
+    font-size: 15px;
+    content: "Achat direct";
+    top: 0;
+    left: 0;
+    transform: translate(1%, calc(-101% - 39px));
+    rotate: -33deg;
+  }
+
+  .topAchatDirect:hover:after {
+    background-color: #1e2f50;
+    font-family: serif;
+    font-size: 40px;
+    content: "\002139";
+    line-height: 40px;
+    text-align: center;
+    top: 0;
+    left: 0;
+    transform: translate(1%, calc(-101% - 39px));
+    rotate: -33deg;
+    padding: 1px 1px 1px 1px;
+  }
+
+  .topDepot::after {
+    font-family: serif;
+    font-size: 16px;
+    content: "Depot Test";
+    top: 0;
+    left: 0;
+    transform: translate(1%, calc(-101% - 39px));
+    rotate: -33deg;
+  }
+  .topDepot:hover:after {
+    font-size: 40px;
+    content: "\002139";
+    line-height: 40px;
+    text-align: center;
+    background-color: #1e2f50;
+    top: 0;
+    left: 0;
+    transform: translate(1%, calc(-101% - 39px));
+    rotate: -33deg;
+  }
+
+  .topMetaux::after {
+    font-family: serif;
+    font-size: 16px;
+    content: "Métaux Précieux";
+    top: 0;
+    left: 0;
+    transform: translate(1%, calc(-101% - 39px));
+    rotate: -33deg;
+  }
+  .topMetaux:hover:after {
+    font-size: 40px;
+    content: "\002139";
+    line-height: 40px;
+    text-align: center;
+    background-color: #1e2f50;
+    top: 0;
+    left: 0;
+    transform: translate(1%, calc(-101% - 39px));
+    rotate: -33deg;
+  }
+  .topAchatOption::after {
+    font-family: serif;
+    font-size: 12px;
+    content: "Achat Option Reprise";
+    top: 0;
+    left: 0;
+    transform: translate(1%, calc(-101% - 39px));
+    rotate: -33deg;
+  }
+  .topAchatOption:hover:after {
+    font-size: 40px;
+    content: "\002139";
+    line-height: 40px;
+    text-align: center;
+    font-family: serif;
+    background-color: #1e2f50;
+    top: 0;
+    left: 0;
+    transform: translate(1%, calc(-101% - 39px));
+    rotate: -33deg;
+  }
+  .topLivre::after {
+    font-family: serif;
+    font-size: 16px;
+    content: "Livre Police";
+    top: 0;
+    left: 0;
+    transform: translate(1%, calc(-101% - 39px));
+    rotate: -33deg;
+  }
+  .topLivre:hover:after {
+    font-size: 40px;
+    content: "\002139";
+    line-height: 40px;
+    text-align: center;
+    background-color: #1e2f50;
+    top: 0;
+    left: 0;
+    transform: translate(1%, calc(-101% - 39px));
+    rotate: -33deg;
+  }
+  .topExportation::after {
+    font-family: serif;
+    font-size: 13px;
+    content: "Exportation Comptable";
+    top: 0;
+    left: 0;
+    transform: translate(1%, calc(-101% - 39px));
+    rotate: -33deg;
+  }
+  .topExportation:hover:after {
+    font-size: 40px;
+    content: "\002139";
+    line-height: 40px;
+    text-align: center;
+    background-color: #1e2f50;
+    top: 0;
+    left: 0;
+    transform: translate(1%, calc(-101% - 39px));
+    rotate: -33deg;
+  }
+  .topGestion::after {
+    font-family: serif;
+    font-size: 15px;
+    content: "Gestion Catalogue";
+    top: 0;
+    left: 0;
+    transform: translate(1%, calc(-101% - 39px));
+    rotate: -33deg;
+  }
+
+  .topGestion:hover:after {
+    font-size: 40px;
+    content: "\002139";
+    line-height: 40px;
+    text-align: center;
+    background-color: #1e2f50;
+    top: 0;
+    left: 0;
+    transform: translate(1%, calc(-101% - 39px));
+    rotate: -33deg;
+  }
+  .topSAV::after {
+    font-family: serif;
+    font-size: 20px;
+    content: "S.A.V";
+    top: 0;
+    left: 0;
+    transform: translate(1%, calc(-101% - 39px));
+    rotate: -33deg;
+  }
+  .topSAV:hover:after {
+    font-size: 40px;
+    content: "\002139";
+    line-height: 40px;
+    text-align: center;
+    background-color: #1e2f50;
+    top: 0;
+    left: 0;
+    transform: translate(1%, calc(-101% - 39px));
+    rotate: -33deg;
+  }
+}

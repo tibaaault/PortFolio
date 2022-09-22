@@ -1,0 +1,35 @@
+#titreDefinirLePerimetreDeLaVeille{
+    font-size: 22px;
+    margin-bottom: -20px;
+  }
+  
+  .cadre100 {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    background-color: #fff;
+    margin: auto;
+    margin-bottom: 50px;
+    color: black;
+    padding: 10px 10px 10px 10px;
+  }
+  
+  .cadreVeille {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    margin: auto;
+    margin-bottom: 50px;
+    color: #fff;
+    font-size: 24px;
+  }
+  
+  #qu\'est-ce-qu\'une-veille-technologique{
+    padding-left: 25%;
+    padding-right: 25%;
+  }
+  
+  #titreSources{
+    font-weight: bold;
+    font-size: 24px;
+  }
