@@ -1,10 +1,12 @@
 .sousHeader {
   display: flex;
   position: relative;
-  width: 100%;
+  width: 110%;
   background-color: #fff;
-  margin-bottom: 250px;
-  margin-top: -20px;
+  margin-bottom: 240px;
+margin-left: -10px;
+margin-top: -10px;
+
 }
 
 .sousHeaderGauche {

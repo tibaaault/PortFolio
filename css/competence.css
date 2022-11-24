@@ -1,35 +1,42 @@
 .cadre50 {
-    width: 50%;
-    position: relative;
-    display: flex;
-    text-align: center;
-    padding: 20px 20px 20px 20px;
-  }
-  
-  .cadre50Gauche {
-    width: 50%;
-    position: relative;
-    display: initial;
-    text-align: center;
-    padding: 20px 20px 20px 20px;
-  }
+  width: 50%;
+  position: relative;
+  display: flex;
+  text-align: center;
+  padding: 20px 20px 20px 20px;
+}
+
+.cadre50Gauche {
+  width: 50%;
+  position: relative;
+  display: initial;
+  text-align: center;
+  padding: 20px 20px 20px 20px;
+}
 
 #titreCadre {
-    font-weight: bold;
-    font-size: 25px;
-  }
-  
-  #texteCadre {
-    font-size: 20px;
-  }
+  font-weight: bold;
+  font-size: 25px;
+}
 
-  #listeCadre {
-    text-align: left;
-    line-height: 30px;
-  }
+#texteCadre {
+  font-size: 20px;
+}
 
-  #imageCadre {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-  }
+#listeCadre {
+  text-align: left;
+  line-height: 30px;
+}
+
+#imageCadre {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1{
+  text-align: center;
+  font-size: 40px;
+  margin-top: -150px;
+  margin-bottom: 50px;
+}
